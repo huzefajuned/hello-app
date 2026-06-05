@@ -18,7 +18,7 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST }}
           username: root
-          key: ${{ secrets.SSH_KEY }}
+          key:  ${{ secrets.SSH_KEY }}
 
           script: /home/ubuntu/hello-app
             git pull
