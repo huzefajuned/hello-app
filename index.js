@@ -5,7 +5,7 @@ const PORT = process.env.PORT ?? 8080;
 const app = express();
 
 app.use("/", (req, res) => {
-  return res.json({ mess: "Hello from server V1" });
+  return res.json({ mess: "Hello from server V2@latest" });
 });
 
 
