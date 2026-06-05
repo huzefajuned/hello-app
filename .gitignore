@@ -46,7 +46,7 @@ web_modules/
 
 # TypeScript cache
 *.tsbuildinfo
-
+*we-server-key.pem
 # Optional npm cache directory
 .npm
 
