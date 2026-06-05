@@ -2,7 +2,7 @@ name: Deploy Node App to AWS EC2
 
 on:
   push:
-    branches: -main
+    branches: -master
 
 jobs:
   deploy:
@@ -18,7 +18,8 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST }}
           username: root
-          key: ${{secrets.SSH_KEY}}
+          key: ${{ secrets.SSH_KEY }}
+
           script: /home/ubuntu/hello-app
             git pull
             docker compose up -d --build
